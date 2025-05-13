@@ -1,10 +1,12 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import Districts from "./pages/Districts";
+import DistrictDetail from "./pages/DistrictDetail";
+import MemorialDetail from "./pages/MemorialDetail";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -23,7 +25,15 @@ const App = () => (
           <main className="flex-grow">
             <Routes>
               <Route path="/" element={<Index />} />
-              {/* Тут будут добавлены маршруты для других страниц */}
+              <Route path="/districts" element={<Districts />} />
+              <Route
+                path="/district/:districtId"
+                element={<DistrictDetail />}
+              />
+              <Route
+                path="/memorial/:memorialId"
+                element={<MemorialDetail />}
+              />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
