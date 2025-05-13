@@ -27,6 +27,14 @@ export const featuredMemorials = [
     description:
       "Установлена в 2010 году в честь присвоения городу Тихвину почётного звания Российской Федерации «Город воинской славы».",
   },
+  {
+    id: "bolshoi-sabsk",
+    title: "Мемориальный комплекс в Большом Сабске",
+    location: "Волосовский район",
+    image: "https://lenpeh.ru/admin/uploads/news/news1632742656.JPG",
+    description:
+      "Установлен в честь курсантов военных училищ, державших оборону на этом участке в период сражений на Ленинградском фронте в годы Великой Отечественной войны. В комплекс входят памятный обелиск курсантам ленинградских военных училищ, сохранённый участок линии обороны, памятник и братские могилы.",
+  },
 ];
 
 // Список районов Ленинградской области
@@ -34,9 +42,8 @@ export const districts = [
   {
     id: "volosovsky",
     name: "Волосовский",
-    monumentsCount: 5,
-    image:
-      "https://images.unsplash.com/photo-1588867702719-cae5992648ef?q=80&w=2070",
+    monumentsCount: 3,
+    image: "https://lenpeh.ru/admin/uploads/news/news1632742656.JPG",
   },
   {
     id: "volkhovsky",
@@ -171,8 +178,7 @@ export const memorialsByDistrict = {
       address:
         "Ленинградская область, Волосовский район, Сабское сельское поселение, деревня Большой Сабск, Центральная улица",
       coordinates: { lat: 59.39, lng: 29.05 }, // Примерные координаты
-      image:
-        "https://images.unsplash.com/photo-1588867702719-cae5992648ef?q=80&w=2070",
+      image: "https://lenpeh.ru/admin/uploads/news/news1632742656.JPG",
       type: "Мемориальный комплекс",
       year: "1941-1945",
     },
@@ -199,28 +205,6 @@ export const memorialsByDistrict = {
       image:
         "https://images.unsplash.com/photo-1596803244535-925769f644b2?q=80&w=2071",
       type: "Стела",
-      year: "1941",
-    },
-    {
-      id: "stela-zemlyakam",
-      title:
-        "Стела в память о земляках, погибших в годы Великой Отечественной войны",
-      description:
-        "Памятник посвящен жителям Волосово, погибшим в годы Великой Отечественной войны.",
-      address: "Волосово, центральная площадь",
-      coordinates: { lat: 59.44, lng: 29.48 }, // Примерные координаты
-      image: "",
-      type: "Стела",
-    },
-    {
-      id: "pamyatny-znak-kursantam",
-      title: "Памятный знак в честь погибших курсантов военных училищ",
-      description:
-        "Посвящен курсантам военных училищ, погибшим в августе 1941 года.",
-      address: "Волосово",
-      coordinates: { lat: 59.43, lng: 29.47 }, // Примерные координаты
-      image: "",
-      type: "Памятный знак",
       year: "1941",
     },
   ],
